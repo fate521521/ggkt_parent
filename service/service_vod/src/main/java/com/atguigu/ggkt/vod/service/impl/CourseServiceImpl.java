@@ -101,7 +101,7 @@ public class CourseServiceImpl extends ServiceImpl<CourseMapper, Course> impleme
         //添加课程描述信息，操作course_description
         CourseDescription courseDescription = new CourseDescription();
         courseDescription.setDescription(courseFormVo.getDescription());
-        //设置课程id
+        //设置课程id --- 课程id 和描述id 一一对应
         courseDescription.setId(course.getId());
         descriptionService.save(courseDescription);
 

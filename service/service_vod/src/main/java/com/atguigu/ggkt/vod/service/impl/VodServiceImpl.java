@@ -39,8 +39,8 @@ public class VodServiceImpl implements VodService {
         //上传请求对象
         VodUploadRequest request = new VodUploadRequest();
         //设置视频文件在本地路径
-        request.setMediaFilePath("D:\\001.mp4");
-        //任务流
+        request.setMediaFilePath("D:\\fate.mp4");
+        //任务流名称
         request.setProcedure("LongVideoPreset");
         try {
             //调用方法上传视频，指定地域

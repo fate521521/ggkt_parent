@@ -7,6 +7,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @ComponentScan(basePackages = "com.atguigu")
+//开启nacos 注册
 @EnableDiscoveryClient
 public class ServiceVodApplication {
     public static void main(String[] args) {

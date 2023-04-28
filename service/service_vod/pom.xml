@@ -49,6 +49,7 @@
             <groupId>com.qcloud</groupId>
             <artifactId>vod_api</artifactId>
             <version>2.1.4</version>
+<!--            排除slf4j的日志 该日志和springboot的日志冲突 启动会报错-->
             <exclusions>
                 <exclusion>
                     <groupId>org.slf4j</groupId>

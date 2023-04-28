@@ -11,6 +11,7 @@ public class TestWrite {
         //设置文件名称和路径
         String fileName = "D:\\atguigu.xlsx";
         //调用方法
+        //EasyExcel.write(fileName,User.class) 相当于创建了一个workbook
         EasyExcel.write(fileName,User.class)
                   .sheet("写操作")
                   .doWrite(data());

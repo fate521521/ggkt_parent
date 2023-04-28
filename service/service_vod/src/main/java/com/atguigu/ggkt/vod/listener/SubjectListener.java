@@ -9,7 +9,7 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-@Component
+@Component //交给spring管理 读取excel 需要将数据加入数据库
 public class SubjectListener extends AnalysisEventListener<SubjectEeVo> {
 
     //注入mapper
@@ -17,6 +17,7 @@ public class SubjectListener extends AnalysisEventListener<SubjectEeVo> {
     private SubjectMapper subjectMapper;
 
     //一行一行，从第二行
+    //读取每一行的数据
     @Override
     public void invoke(SubjectEeVo subjectEeVo, AnalysisContext analysisContext) {
         Subject subject = new Subject();

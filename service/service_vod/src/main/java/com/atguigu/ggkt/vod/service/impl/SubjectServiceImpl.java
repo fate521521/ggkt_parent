@@ -73,6 +73,8 @@ public class SubjectServiceImpl extends ServiceImpl<SubjectMapper, Subject> impl
                 SubjectEeVo subjectEeVo = new SubjectEeVo();
 //                subjectEeVo.setId(subject.getId());
 //                subjectEeVo.setParentId(subject.getParentId());
+                //把subject中的值复制到subjectEeVo中去 建议使用该工具类
+                //找到相同名称的属性，相同就复制，不相同的就不复制
                 BeanUtils.copyProperties(subject,subjectEeVo);
                 subjectEeVoList.add(subjectEeVo);
             }
